@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../styles/Header.css";
 import React from "react";
 
 const Header = ({ user }) => {

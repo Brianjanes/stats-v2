@@ -1,0 +1,11 @@
+.container {
+  width: calc(100% - 20rem);
+  margin-inline: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+}

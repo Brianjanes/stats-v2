@@ -7,6 +7,9 @@ import backgroundSquare from "../images/background-square.png";
 import backgroundCircle1 from "../images/background-circle1.png";
 import backgroundSquare1 from "../images/background-square1.png";
 import backgroundTriangle1 from "../images/background-triangle1.png";
+import backgroundCircle2 from "../images/background-circle2.png";
+import backgroundSquare2 from "../images/background-square2.png";
+import backgroundTriangle2 from "../images/background-triangle2.png";
 
 const images = [
   backgroundCircle,
@@ -15,6 +18,9 @@ const images = [
   backgroundCircle1,
   backgroundSquare1,
   backgroundTriangle1,
+  backgroundCircle2,
+  backgroundSquare2,
+  backgroundTriangle2,
 ];
 
 const getRandomPosition = () => {
