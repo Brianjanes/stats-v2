@@ -1,5 +1,6 @@
 import "../styles/Header.css";
 import React from "react";
+import { SignIn, SignUp, SignedIn, SignedOut } from "@clerk/clerk-react";
 
 const Header = ({ user }) => {
   return (

@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./components/Header.js";
 import RandomBackground from "./components/RandomBackground.jsx";
 import DashBoard from "./components/Dashboard.jsx";
+import Profile from "./routes/Profile.jsx";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import {
   ClerkProvider,
@@ -14,6 +15,7 @@ import {
   SignUp,
   RedirectToSignIn,
 } from "@clerk/clerk-react";
+import { dark, neobrutalism, shadesOfPurple } from "@clerk/themes";
 
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key. I wrote this Error.");
@@ -26,12 +28,18 @@ const ClerkProviderWithRoutes = () => {
   // const savedTournamentData = useGetTournaments();
 
   return (
-    <ClerkProvider publishableKey={clerkPubKey} navigate={(to) => navigate(to)}>
+    <ClerkProvider
+      publishableKey={clerkPubKey}
+      navigate={(to) => navigate(to)}
+      appearance={{ baseTheme: [dark, shadesOfPurple] }}
+    >
       <div className="App">
         <Header />
         <RandomBackground />
         <Routes>
           <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/profile" element={<Profile />} />
+
           {/* <Route
             path="/sign-in/*"
             element={<SignIn routing="path" path="/sign-in" />}
