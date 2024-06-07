@@ -4,24 +4,20 @@ import "../styles/RandomBackground.css";
 import backgroundTriangle from "../images/background-triangle.png";
 import backgroundCircle from "../images/background-circle.png";
 import backgroundSquare from "../images/background-square.png";
-import backgroundCircle1 from "../images/background-circle1.png";
-import backgroundSquare1 from "../images/background-square1.png";
-import backgroundTriangle1 from "../images/background-triangle1.png";
-import backgroundCircle2 from "../images/background-circle2.png";
-import backgroundSquare2 from "../images/background-square2.png";
-import backgroundTriangle2 from "../images/background-triangle2.png";
 
-const images = [
-  backgroundCircle,
-  backgroundSquare,
-  backgroundTriangle,
-  backgroundCircle1,
-  backgroundSquare1,
-  backgroundTriangle1,
-  backgroundCircle2,
-  backgroundSquare2,
-  backgroundTriangle2,
-];
+const images = Array.from({ length: 20 }, (_, index) => {
+  const shapeIndex = index % 3;
+  switch (shapeIndex) {
+    case 0:
+      return backgroundCircle;
+    case 1:
+      return backgroundSquare;
+    case 2:
+      return backgroundTriangle;
+    default:
+      return null;
+  }
+});
 
 const getRandomPosition = () => {
   const x = Math.floor(Math.random() * 100);

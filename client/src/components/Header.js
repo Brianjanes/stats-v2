@@ -1,8 +1,10 @@
 import "../styles/Header.css";
 import React from "react";
-import { SignIn, SignUp, SignedIn, SignedOut } from "@clerk/clerk-react";
+import { useUser, UserButton } from "@clerk/clerk-react";
 
-const Header = ({ user }) => {
+const Header = () => {
+  const { user } = useUser();
+
   return (
     <div className="main-header">
       <header>
@@ -13,13 +15,13 @@ const Header = ({ user }) => {
       <nav>
         {!user ? (
           <div className="bottom-header-right">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="/sign-in/*">Login</a>
+            <a href="/sign-up/*">Register</a>
           </div>
         ) : (
           <div className="bottom-header-right">
-            <a href="#">Dashboard</a>
-            <a href="#">Logout</a>
+            <a href="/profile">Dashboard</a>
+            <UserButton />
           </div>
         )}
       </nav>

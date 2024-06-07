@@ -2,7 +2,7 @@ import "./styles/Main.css";
 import React from "react";
 import Header from "./components/Header.js";
 import RandomBackground from "./components/RandomBackground.jsx";
-import DashBoard from "./components/Dashboard.jsx";
+import DashBoard from "./routes/Dashboard.jsx";
 import Profile from "./routes/Profile.jsx";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import {
@@ -40,7 +40,7 @@ const ClerkProviderWithRoutes = () => {
           <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/profile" element={<Profile />} />
 
-          {/* <Route
+          <Route
             path="/sign-in/*"
             element={<SignIn routing="path" path="/sign-in" />}
           />
@@ -49,7 +49,7 @@ const ClerkProviderWithRoutes = () => {
             element={<SignUp routing="path" path="/sign-up" />}
           />
           <Route path="/profile" element={<Profile />} />
-          <Route
+          {/* <Route
             path="/dashboard"
             element={<DashBoard savedTournamentData={savedTournamentData} />}
           /> */}

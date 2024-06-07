@@ -1,11 +1,36 @@
 .container {
-  width: calc(100% - 20rem);
-  margin-inline: 10rem;
-  margin-top: 2rem;
+  width: calc(100% - 16rem);
+  height: 1100px;
+  margin-inline: 8rem;
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border: 1px solid whitesmoke;
+  box-shadow: var(--box-shadow-var);
+}
+
+.dashboard-layout {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 24px;
+}
+
+.dashboard-box {
+  width: 45%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  padding: 2rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow-var);
+  border: 2px solid lightgray;
 }
