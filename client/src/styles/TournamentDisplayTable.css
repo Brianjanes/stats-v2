@@ -8,8 +8,9 @@
 .table-header {
   background-color: var(--brainstorm-color-var);
   text-shadow: var(--text-shadow-var);
+  letter-spacing: var(--letter-spacing-var);
   opacity: 0.75;
-  color: whitesmoke;
+  color: var(--container-contrast-color-var);
   text-align: center;
   padding: 8px;
   font-weight: bold;
@@ -49,12 +50,7 @@
 
 .results-table {
   width: 100%;
-  border-collapse: collapse;
-}
-
-.results-table td {
-  padding: 8px;
-  border-bottom: var(--border-var);
+  border: var(--border-var);
 }
 
 .notes-button {

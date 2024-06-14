@@ -20,17 +20,48 @@ const TournamentResultsTable = ({ tournamentResults }) => {
 
   return (
     <table className="results-table">
+      <thead>
+        <tr className="table-header">
+          <th style={{ width: "5%" }}>Round</th>
+          <th style={{ width: "20%" }}>Matchup</th>
+          <th style={{ width: "10%" }}>Wins</th>
+          <th style={{ width: "10%" }}>Losses</th>
+          <th style={{ width: "10%" }}>Draws</th>
+          <th style={{ width: "5%" }}>Notes</th>
+        </tr>
+      </thead>
       <tbody>
         {tournamentResults.map((result, index) => (
-          <tr
-            key={index}
-            style={{
-              backgroundColor: determineBackgroundColor(result),
-              opacity: 0.75,
-            }}
-          >
+          <tr key={index} className="result-row">
+            <td style={{ fontWeight: "bold" }}>{result.round}</td>
+            <td style={{ textAlign: "left" }}>{result.matchup}</td>
+            <td
+              style={{
+                backgroundColor: determineBackgroundColor(result),
+                opacity: 0.75,
+              }}
+            >
+              <span style={{ fontWeight: "bold" }}>Wins</span>: {result.wins}
+            </td>
+            <td
+              style={{
+                backgroundColor: determineBackgroundColor(result),
+                opacity: 0.75,
+              }}
+            >
+              <span style={{ fontWeight: "bold" }}>Losses</span>:{" "}
+              {result.losses}
+            </td>
+            <td
+              style={{
+                backgroundColor: determineBackgroundColor(result),
+                opacity: 0.75,
+                width: "2rem",
+              }}
+            >
+              <span style={{ fontWeight: "bold" }}>Draws</span>: {result.draws}
+            </td>
             <td>
-              Round {result.round}: {result.matchup}
               <button
                 className="notes-button"
                 onClick={() => handleNotesModal(result.notes)}
@@ -38,9 +69,6 @@ const TournamentResultsTable = ({ tournamentResults }) => {
                 NOTES
               </button>
             </td>
-            <td>Wins: {result.wins}</td>
-            <td>Losses: {result.losses}</td>
-            <td>Draws: {result.draws}</td>
           </tr>
         ))}
       </tbody>
