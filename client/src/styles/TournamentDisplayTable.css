@@ -1,0 +1,72 @@
+.table-container {
+  width: 95%;
+  overflow-x: auto;
+  border-radius: 4px;
+  border: var(--border-var);
+}
+
+.table-header {
+  background-color: var(--brainstorm-color-var);
+  text-shadow: var(--text-shadow-var);
+  opacity: 0.75;
+  color: whitesmoke;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.tournament-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tournament-table th,
+.tournament-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: var(--border-var);
+}
+
+.tournament-header {
+  cursor: pointer;
+  background-color: var(--container-color-var);
+}
+
+.tournament-header:hover {
+  background-color: var(--container-contrast-color-var);
+}
+
+.toggle-icon {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tournament-results {
+  padding: 12px;
+  background-color: var(--container-color-var);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table td {
+  padding: 8px;
+  border-bottom: var(--border-var);
+}
+
+.notes-button {
+  margin-left: 8px;
+  color: var(--brainstorm-color-var);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.notes-button:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}

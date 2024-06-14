@@ -1,0 +1,70 @@
+/* RoundResultsTable.css */
+
+.table-div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid var(--border-var);
+  padding: 10px;
+  text-align: center;
+}
+
+.text-input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid var(--border-var);
+  border-radius: 4px;
+}
+
+.plus-minus-input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minus-button,
+.plus-button {
+  background-color: var(--brainstorm-color-var);
+  color: whitesmoke;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  background-color: var(--brainstorm-color-var-hover);
+}
+
+.number-display {
+  margin: 0 10px;
+  font-size: 1rem;
+  width: 20px;
+}
+
+.notes-button {
+  background-color: var(--container-color-var);
+  color: var(--brainstorm-color-var);
+  border: 1px solid var(--brainstorm-color-var);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.notes-button:hover {
+  background-color: var(--brainstorm-color-var);
+  color: whitesmoke;
+}

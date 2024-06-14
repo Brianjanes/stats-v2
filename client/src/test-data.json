@@ -1,0 +1,126 @@
+{
+  "userEmail": "janes.brian@gmail.com",
+  "tournaments": [
+    {
+      "tournamentResults": [
+        {
+          "round": 1,
+          "matchup": "Phoenix",
+          "wins": 2,
+          "losses": 0,
+          "draws": 0,
+          "notes": "Checking it out"
+        },
+        {
+          "round": 2,
+          "matchup": "TESTING EMAIL",
+          "wins": 1,
+          "losses": 1,
+          "draws": 1,
+          "notes": ""
+        },
+        {
+          "round": 3,
+          "matchup": "TESTING EMAIL",
+          "wins": 1,
+          "losses": 2,
+          "draws": 0,
+          "notes": ""
+        }
+      ],
+      "tournamentMetaData": {
+        "tournamentName": "TESTING EMAIL",
+        "tournamentDate": "2023-12-20",
+        "tournamentLocation": "TESTING EMAIL",
+        "deckName": "TESTING EMAIL",
+        "tournamentId": "805f9d81-9a9e-49ca-8b96-a3350dc6444d"
+      }
+    },
+    {
+      "tournamentResults": [
+        {
+          "round": 1,
+          "matchup": "TESTING ",
+          "wins": 0,
+          "losses": 2,
+          "draws": 0,
+          "notes": ""
+        },
+        {
+          "round": 2,
+          "matchup": "TESTING ",
+          "wins": 0,
+          "losses": 2,
+          "draws": 0,
+          "notes": ""
+        },
+        {
+          "round": 3,
+          "matchup": "TESTING ",
+          "wins": 0,
+          "losses": 2,
+          "draws": 0,
+          "notes": ""
+        }
+      ],
+      "tournamentMetaData": {
+        "tournamentName": "TESTING ",
+        "tournamentDate": "2023-12-21",
+        "tournamentLocation": "TESTING ",
+        "deckName": "TESTING ",
+        "tournamentId": "1ab6db7b-5f28-4756-b6e6-b2bf43e9e2a3"
+      }
+    },
+    {
+      "tournamentResults": [
+        {
+          "round": 1,
+          "matchup": "",
+          "wins": 0,
+          "losses": 0,
+          "draws": 0,
+          "notes": "boing boing"
+        },
+        {
+          "round": 2,
+          "matchup": "",
+          "wins": 1,
+          "losses": 0,
+          "draws": 0,
+          "notes": ""
+        },
+        {
+          "round": 3,
+          "matchup": "",
+          "wins": 0,
+          "losses": 0,
+          "draws": 0,
+          "notes": ""
+        },
+        {
+          "round": 4,
+          "matchup": "",
+          "wins": 0,
+          "losses": 0,
+          "draws": 0,
+          "notes": ""
+        },
+        {
+          "round": 5,
+          "matchup": "",
+          "wins": 0,
+          "losses": 0,
+          "draws": 0,
+          "notes": ""
+        }
+      ],
+      "tournamentMetaData": {
+        "tournamentName": "",
+        "tournamentDate": "",
+        "tournamentLocation": "",
+        "deckName": "notes part",
+        "tournamentId": "fcb1bb5e-eccf-42b6-8cd9-a0b69f7f503c"
+      }
+    }
+  ]
+}

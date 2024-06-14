@@ -63,6 +63,11 @@ h6 {
 }
 :root {
   --box-shadow-var: 4px 4px 2px 1px rgba(45, 45, 45, 0.7);
+  --container-color-var: #f7f7f7;
+  --container-contrast-color-var: #e0e0e0;
+  --border-var: 2px solid var(--container-contrast-color-var);
+  --text-shadow-var: 1.5px 1.5px 1.5px rgba(19, 19, 19, 0.85);
+  --brainstorm-color-var: #3653a7;
 }
 
 .App {
